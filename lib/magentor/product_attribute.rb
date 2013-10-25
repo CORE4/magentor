@@ -69,6 +69,19 @@ module Magento
       def options(*args)
         commit("options", *args)
       end
+
+      # catalog_product_attribute.addOption
+      # Add an attribute option
+      # 
+      # Return: boolean
+      # 
+      # Arguments:
+      # 
+      # mixed attributeId - attribute ID or code
+      # array data - array of data to update
+      def add_option(*args)
+        commit("addOption", *args)
+      end
     end
     
     # catalog_product_attribute.update
