@@ -44,6 +44,30 @@ module Magento
         commit("update", *args)
       end
 
+      # catalog_product_attribute.create
+      # Create product attribute
+      # 
+      # Return: boolean
+      # 
+      # Arguments:
+      # 
+      # array data - array of data to update
+      def create(*args)
+        commit("create", *args)
+      end
+
+      # catalog_product_attribute.remove
+      # Remove product attribute
+      # 
+      # Return: boolean
+      # 
+      # Arguments:
+      # 
+      # mixed attribute - attribute code or ID
+      def remove(*args)
+        commit("remove", *args)
+      end
+
       # catalog_product_attribute.currentStore
       # Set/Get current store view
       # 
@@ -81,6 +105,19 @@ module Magento
       # array data - array of data to update
       def add_option(*args)
         commit("addOption", *args)
+      end
+
+      # catalog_product_attribute.removeOption
+      # Remove an attribute option
+      # 
+      # Return: boolean
+      # 
+      # Arguments:
+      # 
+      # mixed attributeId - attribute ID or code
+      # int optionId
+      def remove_option(*args)
+        commit("removeOption", *args)
       end
     end
     
