@@ -12,6 +12,18 @@ module Magento
           new(result)
         end
       end
+
+      # catalog_product_attribute_set.create
+      # Create product attribute set
+      # 
+      # Return: int id of new set
+      # 
+      # Arguments:
+      # 
+      # array data - array of data to create
+      def create(*args)
+        commit("create", *args)
+      end
     end
   end
 end
