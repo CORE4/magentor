@@ -47,11 +47,11 @@ module Magento
       # catalog_product_attribute.create
       # Create product attribute
       # 
-      # Return: boolean
+      # Return: int id of new attribute
       # 
       # Arguments:
       # 
-      # array data - array of data to update
+      # array data - array of data to create
       def create(*args)
         commit("create", *args)
       end
