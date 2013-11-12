@@ -24,6 +24,18 @@ module Magento
       def create(*args)
         commit("create", *args)
       end
+
+      # catalog_product_attribute_set.addAttribute
+      # Add attribute to set
+      # 
+      # Return: bool
+      # 
+      # Arguments:
+      # 
+      # array data - array of data to create
+      def attribute_add(*args)
+        commit("attributeAdd", *args)
+      end
     end
   end
 end
