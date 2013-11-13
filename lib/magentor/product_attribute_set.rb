@@ -36,6 +36,20 @@ module Magento
       def attribute_add(*args)
         commit("attributeAdd", *args)
       end
+
+      # catalog_product_attribute_set.remove
+      # Remove product attribute set
+      # 
+      # Return: bool success
+      # 
+      # Arguments:
+      # 
+      # array data:
+      # attribute_set_id => id
+      # force_products_remove => bool
+      def remove(*args)
+        commit("remove", *args)
+      end
     end
   end
 end
