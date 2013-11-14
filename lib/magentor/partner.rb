@@ -19,7 +19,7 @@ module Magento
       # 
       # array data - array of data to create
       def create(*args)
-        commit("create", *args)
+        commit("add", *args)
       end
 
       # partner.remove
