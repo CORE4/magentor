@@ -46,4 +46,5 @@ module Magento
   autoload :Region,              "magentor/region"
   autoload :Shipment,            "magentor/shipment"
   autoload :Store,               "magentor/store"
+  autoload :Partner,             "magentor/partner"
 end
