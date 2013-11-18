@@ -29,10 +29,24 @@ module Magento
       # 
       # Arguments:
       # 
-      # array data:
-      # partner_id => id
+      # partner_id
       def remove(*args)
         commit("remove", *args)
+      end
+
+      # partner.move
+      # Move partner within the tree
+      # 
+      # Return: bool success
+      # 
+      # Arguments:
+      # 
+      # array data:
+      # partner_id
+      # parent_id
+      # after_id
+      def move(*args)
+        commit("move", *args)
       end
     end
   end
