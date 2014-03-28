@@ -47,4 +47,5 @@ module Magento
   autoload :Shipment,            "magentor/shipment"
   autoload :Store,               "magentor/store"
   autoload :Partner,             "magentor/partner"
+  autoload :Importer,            "magentor/importer"
 end
