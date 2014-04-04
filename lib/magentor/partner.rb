@@ -22,6 +22,19 @@ module Magento
         commit("add", *args)
       end
 
+      # partner.update
+      # Update partner
+      # 
+      # Return: bool success
+      # 
+      # Arguments:
+      # 
+      # partner_id
+      # array data - array of data to create
+      def update(*args)
+        commit("update", *args)
+      end
+
       # partner.remove
       # Remove partner
       # 
